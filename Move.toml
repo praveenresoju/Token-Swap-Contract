@@ -1,0 +1,19 @@
+[package]
+name = "TokenSwapContract"
+version = "1.0.0"
+authors = []
+
+[addresses]
+praveen_addr = "f837dfbdbf5b25416993128f49234bf981bc7d279f72d5326e3fc3dbd4611c82"
+
+[dev-addresses]
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
+
+
+
+
