@@ -38,4 +38,5 @@ Our vision is to democratize token trading by providing a straightforward, trans
 
 0x557d72d2ad976e1c74930281f42cfb6de2d978ad9c437e4cee9dec5d983ab424
 
-![alt text](image-3.png)
+
+![alt text](image.png)
