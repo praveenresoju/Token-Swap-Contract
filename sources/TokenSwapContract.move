@@ -4,9 +4,9 @@ module praveen_addr::TokenSwap {
 
 
     struct SwapPool<phantom TokenA, phantom TokenB> has store, key {
-        token_a_reserve: u64,  // Reserve of Token A in the pool
-        token_b_reserve: u64,  // Reserve of Token B in the pool
-        total_swaps: u64,      // Total number of swaps performed
+        token_a_reserve: u64,
+        token_b_reserve: u64,
+        total_swaps: u64,
     }
 
     public fun initialize_pool<TokenA, TokenB>(
@@ -33,7 +33,6 @@ module praveen_addr::TokenSwap {
         
         assert!(pool.token_b_reserve >= amount, 1);
         
-        // Withdraw Token A from user and deposit to pool owner
         let token_a = coin::withdraw<TokenA>(user, amount);
         coin::deposit<TokenA>(pool_address, token_a);
     
@@ -46,3 +45,4 @@ module praveen_addr::TokenSwap {
     }
 
 }
+
